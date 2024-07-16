@@ -1,12 +1,16 @@
 # Twitter SLS Challenge
 
+SLS Energy coding challenge
+
 ## Requirements
+
 - python 3
 - code editor: vscode
 - web browser: chrome
 - database: postgres
 
 ## Installation
+
 - git clone `https://github.com/6hislain/twitter-sls-challenge`
 - cd `twitter-sls-challenge`
 - pip install > requirements.txt
