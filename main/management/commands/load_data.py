@@ -49,7 +49,6 @@ class Command(BaseCommand):
                                 k: v for k, v in data[0].items() if k != "user"
                             }
                             tweet_data["user"] = user
-
                             created_at_str = tweet_data.pop("created_at")
                             try:
                                 created_at = datetime.strptime(
