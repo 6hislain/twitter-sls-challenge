@@ -75,5 +75,5 @@ pnpm-lock.yaml
 package-lock.json
 yarn.lock
 .env
-sandbox/data/
-sandbox/query2_ref.txt
+data/**.json
+query2_ref.txt
