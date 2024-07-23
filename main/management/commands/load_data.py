@@ -17,7 +17,9 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options):
         folder_path = options["folder_path"]
-        for filename in os.listdir(folder_path):
+        files = os.listdir(folder_path)
+
+        for filename in files:
             if filename.endswith(".json"):
                 file_path = os.path.join(folder_path, filename)
                 try:
@@ -73,5 +75,7 @@ class Command(BaseCommand):
                     print(f"Error loading JSON data from file: {file_path}")
                     print(f"Error message: {str(e)}")
                     continue
+
+                os.remove(file_path)
 
         self.stdout.write(self.style.SUCCESS("Data loaded successfully"))
