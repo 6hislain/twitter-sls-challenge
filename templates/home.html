@@ -1,7 +1,27 @@
 {% extends 'layouts/base.html' %} {% load static %} {% block content %}
 <main class="container">
   <div class="d-flex align-items-center justify-content-center min-vh-100">
-    <h1>Twitter Data Analyzer</h1>
+    <div>
+      <h2 class="text-center">
+        Twitter Data Analyzer <br />
+        (endpoints)
+      </h2>
+      <ol>
+        <li>
+          <a class="text-decoration-none" href="#">
+            q2 (simple request) &rarr;
+          </a>
+        </li>
+        <li>
+          <a class="text-decoration-none" href="#">q2 (keyword score) &rarr;</a>
+        </li>
+        <li>
+          <a class="text-decoration-none" href="/statistics">
+            statistics &rarr;
+          </a>
+        </li>
+      </ol>
+    </div>
   </div>
 </main>
 {% endblock %}
